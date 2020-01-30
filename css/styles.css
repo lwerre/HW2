@@ -1,0 +1,47 @@
+/* colors: GREEN #94A03C, NAVY BLUE #20314B, BEIGE #D2C4A1, ROBINS EGG BLUE #66C6C4, PASTEL BLUE #BFDFE1*/
+
+
+html, /*this needs to stay. I don't know why but things get funky if I remove it*/
+
+.newspapers { /*formats the webpage into two columns*/
+	column-count: 2;
+    column-gap: 60px;
+    column-rule: 1px solid #94A03C;/*how do I shorten the height of the column-rule?*/
+    
+}
+
+body {
+    background-color: #66C6C4;
+}
+
+#header { /*formats the "Meet Lynn Werre" header*/
+	column-span: all;
+	font-family: 'Pacifico', cursive;
+    font-size: 30pt;
+    color: #20314B;/*navy blue text*/
+}
+
+#about { /*About Me* section in column 1*/
+	column-width: 200px;
+    column-fill: auto;
+    padding: 20px 20px 20px 20px;
+    }
+
+
+#work { /*See My Work*/
+    column-width: 200px;
+    column-fill: auto;
+    padding: 40px;
+}
+
+img {
+    width: 700px;
+    column-span: all;
+}
+
+#footer {
+    column-span: all;
+    font-family: 'Pacifico', cursive;
+    font-size: 20pt;
+    color: #20314B;/*navy blue text*/
+}
